@@ -13,11 +13,9 @@ public interface UserGroup {
 
     UserGroup getParent();
 
+    void setParent(UserGroup parent);
+
     Collection<UserGroup> getChildren();
-
-    void addChild(UserGroup child);
-
-    void removeChild(UserGroup child);
 
     Collection<UserGrant> getGrants(boolean hierarchically);
 
